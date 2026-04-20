@@ -326,45 +326,7 @@
   #team {
     background: var(--cream);
   }
-  .team-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    margin-top: 48px;
-  }
-  .team-card {
-    background: var(--warm-white);
-    padding: 32px 28px;
-    border-radius: 8px;
-    box-shadow: 0 2px 20px rgba(0,0,0,0.04);
-  }
-  .team-avatar {
-    width: 56px; height: 56px;
-    background: linear-gradient(135deg, var(--brown-light), var(--brown-dark));
-    border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    font-family: 'Noto Serif KR', serif;
-    font-size: 20px;
-    color: white;
-    margin-bottom: 16px;
-  }
-  .team-name {
-    font-family: 'Noto Serif KR', serif;
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--text);
-    margin-bottom: 4px;
-  }
-  .team-name-en {
-    font-size: 13px;
-    color: var(--text-light);
-    margin-bottom: 12px;
-  }
-  .team-school {
-    font-size: 12px;
-    color: var(--brown-light);
-    letter-spacing: 0.04em;
-  }
+
 
   /* ── LIBRARY ── */
   #library {
@@ -674,7 +636,7 @@
   <a href="#hero" class="logo">SoriBook <span>소리북</span></a>
   <ul class="nav-links">
     <li><a href="#about"><span class="lang-ko">소개</span><span class="lang-en">About</span></a></li>
-    <li><a href="#team"><span class="lang-ko">팀</span><span class="lang-en">Team</span></a></li>
+    
     <li><a href="#library"><span class="lang-ko">라이브러리</span><span class="lang-en">Library</span></a></li>
     <li><a href="#request"><span class="lang-ko">요청하기</span><span class="lang-en">Requests</span></a></li><li><a href="#contact"><span class="lang-ko">연락처</span><span class="lang-en">Contact</span></a></li>
   </ul>
@@ -687,8 +649,8 @@
     <div class="hero-badge lang-en">Audiobooks for the Visually Impaired</div>
     <h1 class="hero-title">SoriBook</h1>
     <span class="hero-title-kr">소리북</span>
-    <p class="hero-desc lang-ko">시각장애 아동과 성인을 위해 무료로 제공되는, 정성껏 제작된 오디오북. 채드윅 국제학교 학생들이 직접 만든 이니셔티브입니다.</p>
-    <p class="hero-desc lang-en">Thoughtfully produced audiobooks, offered free of charge to visually impaired children and adults. A student-led initiative from Chadwick International School.</p>
+    <p class="hero-desc lang-ko">시각장애 아동과 성인을 위해 정성껏 녹음한 오디오북을 무료로 제공합니다. 채드윅 국제학교 학생들이 직접 만들고 운영합니다.</p>
+    <p class="hero-desc lang-en">Thoughtfully recorded audiobooks, offered free of charge to the visually impaired community. Created and run by students of Chadwick International School.</p>
     <div class="hero-buttons">
       <a href="#library" class="btn-primary">
         <span class="lang-ko">오디오북 듣기</span>
@@ -726,10 +688,32 @@
     <p class="section-subtitle lang-en">More than just reading aloud</p>
     <p class="lang-ko">소리북(SoriBook)은 시각장애인을 위한 맞춤형 오디오북을 제작하는 학생 주도 봉사 동아리입니다.</p>
     <p class="lang-en">SoriBook is a student-led volunteer club that creates tailored audiobooks for the visually impaired community.</p>
-    <p class="lang-ko">듣는 분의 연령과 환경에 맞게 직접 기획하고 녹음합니다. 기존 콘텐츠를 가져다 쓰는 게 아니라, 처음부터 끝까지 우리 손으로 만들어서 무료로 드립니다.</p>
-    <p class="lang-en">We plan and record everything ourselves, tailored to the listener's age and setting. Nothing is borrowed or redistributed. Every recording is made from scratch and offered completely free.</p>
-    <p class="lang-ko">한국어 동화와 영어 그림책을 녹음하여, 시각장애인 누구나 자유롭게 이용하고 영구적으로 접근할 수 있는 오디오 콘텐츠를 만들어 나갑니다.</p>
-    <p class="lang-en">We record Korean storybooks and English picture books, producing audio content that anyone in the visually impaired community can access freely and permanently.</p>
+    <p class="lang-ko">듣는 분의 연령과 환경에 맞게 직접 기획하고 녹음합니다. 기존 콘텐츠를 가져다 쓰는 게 아니라, 처음부터 끝까지 창립 멤버 혹은 다른 부원의 목소리로 녹음해 들려드립니다.</p>
+    <p class="lang-en">We plan and record everything ourselves, tailored to the listener's age and setting. Nothing is borrowed or repurposed. Every recording is made from scratch, in the voices of our founding members or fellow volunteers, and offered completely free.</p>
+    <p class="lang-ko">한국어 동화와 영어 그림책을 녹음하여, 시각장애인 누구나 자유롭게 이용하고 영구적으로 접근할 수 있는 오디오 콘텐츠를 만들어 나갑니다. 오디오북 외에도 미술 작품 해설이나 전시 안내 등 다양한 음성 콘텐츠로 확장해 나갈 예정입니다.</p>
+    <p class="lang-en">We record Korean storybooks and English picture books, producing audio content that anyone in the visually impaired community can access freely and permanently. Beyond audiobooks, we aim to expand into other audio formats such as artwork descriptions and exhibition guides.</p>
+
+    <div style="margin-top:32px;padding-top:28px;border-top:1px solid rgba(139,94,60,0.15);">
+      <div style="font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:var(--brown-light);font-weight:600;margin-bottom:14px;" class="lang-ko">창립 멤버 · 채드윅송도국제학교 11학년</div>
+      <div style="font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:var(--brown-light);font-weight:600;margin-bottom:14px;" class="lang-en">Founders · Chadwick International School, Grade 11</div>
+      <div style="display:flex;gap:24px;flex-wrap:wrap;">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <div style="width:40px;height:40px;background:linear-gradient(135deg,var(--brown-light),var(--brown-dark));border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Noto Serif KR',serif;font-size:15px;color:white;flex-shrink:0;">전</div>
+          <div style="font-family:'Noto Serif KR',serif;font-size:14px;font-weight:700;color:var(--text);" class="lang-ko">전소영</div>
+          <div style="font-family:'Noto Serif KR',serif;font-size:14px;font-weight:700;color:var(--text);" class="lang-en">Jeon Soyoung</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <div style="width:40px;height:40px;background:linear-gradient(135deg,var(--brown-light),var(--brown-dark));border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Noto Serif KR',serif;font-size:15px;color:white;flex-shrink:0;">최</div>
+          <div style="font-family:'Noto Serif KR',serif;font-size:14px;font-weight:700;color:var(--text);" class="lang-ko">최시은</div>
+          <div style="font-family:'Noto Serif KR',serif;font-size:14px;font-weight:700;color:var(--text);" class="lang-en">Choi Sieun</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <div style="width:40px;height:40px;background:linear-gradient(135deg,var(--brown-light),var(--brown-dark));border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Noto Serif KR',serif;font-size:15px;color:white;flex-shrink:0;">심</div>
+          <div style="font-family:'Noto Serif KR',serif;font-size:14px;font-weight:700;color:var(--text);" class="lang-ko">심예서</div>
+          <div style="font-family:'Noto Serif KR',serif;font-size:14px;font-weight:700;color:var(--text);" class="lang-en">Shim Yeseo</div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="stats-grid">
     <div class="stat-card">
@@ -755,35 +739,7 @@
   </div>
 </section>
 
-<!-- Team -->
-<section id="team">
-  <div class="section-label">Our Team</div>
-  <h2 class="section-title lang-ko">만든 사람들</h2>
-  <h2 class="section-title lang-en">The People Behind SoriBook</h2>
-  <div class="team-grid">
-    <div class="team-card">
-      <div class="team-avatar">전</div>
-      <div class="team-name">전소영</div>
-      <div class="team-name-en">Jeon Soyoung</div>
-      <div class="team-school lang-ko">채드윅송도국제학교 · Grade 11</div>
-      <div class="team-school lang-en">Chadwick International School · Grade 11</div>
-    </div>
-    <div class="team-card">
-      <div class="team-avatar">최</div>
-      <div class="team-name">최시은</div>
-      <div class="team-name-en">Choi Sieun</div>
-      <div class="team-school lang-ko">채드윅송도국제학교 · Grade 11</div>
-      <div class="team-school lang-en">Chadwick International School · Grade 11</div>
-    </div>
-    <div class="team-card">
-      <div class="team-avatar">심</div>
-      <div class="team-name">심예서</div>
-      <div class="team-name-en">Shim Yeseo</div>
-      <div class="team-school lang-ko">채드윅송도국제학교 · Grade 11</div>
-      <div class="team-school lang-en">Chadwick International School · Grade 11</div>
-    </div>
-  </div>
-</section>
+
 
 <!-- Library -->
 <section id="library">
@@ -826,7 +782,7 @@
           <a href="https://drive.google.com/file/d/1uNe11s5-B7dKuNc_QB-z6Kx7Yp3K7c2h/view?usp=sharing" target="_blank" class="book-drive-link">
             &#9654; <span class="lang-ko">Drive에서 듣기</span><span class="lang-en">Listen on Drive</span>
           </a>
-          <a href="https://drive.google.com/uc?export=view&id=1uNe11s5-B7dKuNc_QB-z6Kx7Yp3K7c2h" download="80일간의_세계_일주_1장.m4a" class="book-download-link">
+          <a href="audio/aroundtheworldin80days_ch1.m4a" download="aroundtheworldin80days_ch1.m4a" class="book-download-link">
             &#8595; <span class="lang-ko">다운로드</span><span class="lang-en">Download</span>
           </a>
         </div>
@@ -860,7 +816,7 @@
           <a href="https://drive.google.com/file/d/12eP56CkAhmPDsOJy8Us69s_h16DOtcmZ/view?usp=sharing" target="_blank" class="book-drive-link">
             &#9654; <span class="lang-ko">Drive에서 듣기</span><span class="lang-en">Listen on Drive</span>
           </a>
-          <a href="https://drive.google.com/uc?export=view&id=12eP56CkAhmPDsOJy8Us69s_h16DOtcmZ" download="그레이엄의_빵_심부름.m4a" class="book-download-link">
+          <a href="audio/grahamsbreaderrand_ch1.m4a" download="grahamsbreaderrand_ch1.m4a" class="book-download-link">
             &#8595; <span class="lang-ko">다운로드</span><span class="lang-en">Download</span>
           </a>
         </div>
@@ -894,7 +850,7 @@
           <a href="https://drive.google.com/file/d/19PZjU-uyzGrxaUjH0tvcpFdWdOR3g07y/view?usp=drive_link" target="_blank" class="book-drive-link">
             &#9654; <span class="lang-ko">Drive에서 듣기</span><span class="lang-en">Listen on Drive</span>
           </a>
-          <a href="https://drive.google.com/uc?export=view&id=19PZjU-uyzGrxaUjH0tvcpFdWdOR3g07y" download="레오나르도_다_빈치_1장.mp3" class="book-download-link">
+          <a href="audio/leonardodavinci_ch1.mp3" download="leonardodavinci_ch1.mp3" class="book-download-link">
             &#8595; <span class="lang-ko">다운로드</span><span class="lang-en">Download</span>
           </a>
         </div>
